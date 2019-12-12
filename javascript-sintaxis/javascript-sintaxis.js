@@ -46,8 +46,8 @@ myArray.concat(secondArray);
 myArray.slice(indexAnterior, indexPosterior)
 
 
-CONCAT AND SLICE with objects or arrays are copies passed as reference
-this new arrays contain references to the original arrays
+// CONCAT AND SLICE with objects or arrays are copies passed as reference
+// this new arrays contain references to the original arrays
 
 let fruits = [
 {name: "apple"},
@@ -78,17 +78,17 @@ let list = [...groceries];
 fruits[0].name = "lemon";
 console.log(list);
 
-for concatenate for slice for spead operator
-arrays and objects are passed as reference
+// for concatenate for slice for spead operator
+// arrays and objects are passed as reference
 
-for function to iterate over the values of the array
+// for function to iterate over the values of the array
 for (let e of list){
     console.log(e);
 }
 // array.forEach to iterate and get back the value, index and array
 list.forEach( (e, i, a) => { console.log(e,i,a)})
 
-turn an array into a string with a custom separator
+// turn an array into a string with a custom separator
 
 let listFruits = list.map( object => {
     return object.name;
@@ -159,9 +159,9 @@ switch (permissions) {
 
 for (let index=0; index<10; index++){console.log(index)}
 
-js 
-for in
-for of
+// js 
+// for in
+// for of
 
 let person = { name: "mosh", age: 12};
 let colors = ["red", "yellow", "blue"];
@@ -186,7 +186,7 @@ let clone = Object.assign({ original: "original property"},person);
 let clone2 = { ...person };
 console.log(clone2);
 
-strings are like arrays have method
+// strings are like arrays have method
 word = " Gloria Gloria ";
 console.log(word.length);
 console.log(word[0]);
@@ -205,11 +205,11 @@ test
 `
 console.log(stringLiteral);
 
-this points to the object executing the current function
+// this points to the object executing the current function
 
-this and bind and arrow func
+// this and bind and arrow func
 
-pass the this object with second argument of foreach
+// pass the this object with second argument of foreach
 let customer = {
     name: "Carlos",
     age: 24,
@@ -224,7 +224,7 @@ let customer = {
     }
 };
 
-pass the this object with the BIND method
+// pass the this object with the BIND method
 let customer = {
     name: "Carlos",
     age: 24,
@@ -240,7 +240,7 @@ let customer = {
 };
 
 
-injerit the object using arrow function
+// injerit the object using arrow function
 let customer = {
     name: "Carlos",
     age: 24,
@@ -285,14 +285,14 @@ function Circle(radius){
 circle2 = new Circle(11);
 console.log(circle2);
 
-hoisting === levantando
-functions declared on the window object or the global object
-are hoisted on run time
-they are moved to the top of the code
-function asigned to a variable are called function expresion
-this functions are not HOISTED to the top of the code.
+// hoisting === levantando
+// functions declared on the window object or the global object
+// are hoisted on run time
+// they are moved to the top of the code
+// function asigned to a variable are called function expresion
+// this functions are not HOISTED to the top of the code.
 
-process unlimited number of arguments ARGUMENTS
+// process unlimited number of arguments ARGUMENTS
 
 function sum(){
     //arguments is an object
@@ -312,14 +312,14 @@ function mult(shape, ...sides){
 }
 console.log(mult("box",2,4,1));
 
-javascript closure is the oposite to psychology closure
-in psychology closure is letting go of the past
-in javascript closure is how dependencies from an outer or contextual functions
-get carried to the inner function
-and if a reference to this inner functions is returned
-this conection o closure with the original context is saved by js
+// javascript closure is the oposite to psychology closure
+// in psychology closure is letting go of the past
+// in javascript closure is how dependencies from an outer or contextual functions
+// get carried to the inner function
+// and if a reference to this inner functions is returned
+// this conection o closure with the original context is saved by js
 
-guessing getter and setter
+// guessing getter and setter
 
 const person = {
     _name: "Rodrigo",
